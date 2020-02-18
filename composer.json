@@ -1,0 +1,14 @@
+{
+    "name": "mfachroni/smartklas-api",
+    "description": "Package untuk mengakses API Smartklas",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "authors": [
+        {
+            "name": "Mochammad Fachroni",
+            "email": "mr.fachroni@gmail.com"
+        }
+    ]
+}
