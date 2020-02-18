@@ -2,6 +2,7 @@
     "name": "mfachroni/smartklas-api",
     "description": "Package untuk mengakses API Smartklas",
     "type": "library",
+    "license": "MIT",
     "require": {
         "guzzlehttp/guzzle": "^6.5"
     },
@@ -10,5 +11,10 @@
             "name": "Mochammad Fachroni",
             "email": "mr.fachroni@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Smartklas\\" : "src/",
+        }
+    }
 }
