@@ -27,6 +27,8 @@ class SmartklasApi
         if($modul == "presensi"){
             if($option == "ptk"){
                 return new \Smartklas\Modul\Presensi\PresensiPTK($this->client);
+            } else  if($option == "siswa"){
+                return new \Smartklas\Modul\Presensi\PresensiSiswa($this->client);
             }
         }
     }
