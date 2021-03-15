@@ -26,7 +26,7 @@ $client->modul('presensi', 'ptk')->store([
     'address' => 'Alamat Presensi',
     'datetime' => '2021-03-15 08:32:00',
     'nik' => 'NIK-PTK',
-])->getBody();
+]);
 ```
 
 
@@ -45,6 +45,6 @@ $client->modul('presensi', 'siswa')->store([
     'address' => 'Alamat Presensi',
     'datetime' => '2021-03-15 08:32:00',
     'nisn' => 'NISN-SISWA',
-])->getBody();
+]);
 ```
 

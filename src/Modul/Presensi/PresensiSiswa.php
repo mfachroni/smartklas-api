@@ -14,13 +14,13 @@ class PresensiSiswa
 
     public function get()
     {
-        return $this->client->get('/api/sync/presensi/siswa');
+        return $this->client->get('/api/sync/presensi/siswa')->getBody();
     }
 
     public function store($params = [])
     {
         return $this->client->post('/api/sync/presensi/siswa', [
             'form_params' => $params,
-        ]);
+        ])->getBody();
     }
 }

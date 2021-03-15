@@ -14,13 +14,13 @@ class PresensiPTK
 
     public function get()
     {
-        return $this->client->get('/api/sync/presensi/ptk');
+        return $this->client->get('/api/sync/presensi/ptk')->getBody();
     }
 
     public function store($params = [])
     {
         return $this->client->post('/api/sync/presensi/ptk', [
             'form_params' => $params,
-        ]);
+        ])->getBody();
     }
 }
