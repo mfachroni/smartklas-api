@@ -18,7 +18,7 @@ class SmartklasApi
             'base_uri' => $this->URL,
             'headers' => [
                 'Accept' => 'application/json',
-                'Authorization' => 'Bearer '+$this->apiKey,
+                'Authorization' => 'Bearer '.$this->apiKey,
                 ]
         ]);
     }
@@ -26,7 +26,7 @@ class SmartklasApi
     public function modul($modul, $option){
         if($modul == "presensi"){
             if($option == "ptk"){
-                return new Smartklas\Modul\Presensi\PresensiPTK();
+                return new \Smartklas\Modul\Presensi\PresensiPTK($this->client);
             }
         }
     }
