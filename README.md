@@ -44,7 +44,7 @@ $client->modul('presensi', 'siswa')->store([
     'lng' => '112.73387993250381',
     'address' => 'Alamat Presensi',
     'datetime' => '2021-03-15 08:32:00',
-    'nisn' => 'NISN-PTK',
+    'nisn' => 'NISN-SISWA',
 ])->getBody();
 ```
 
