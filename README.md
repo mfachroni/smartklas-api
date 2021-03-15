@@ -11,7 +11,7 @@ composer require mfachroni/smartklas-api
 
 ## Contoh Penggunaan
 
-** Mengirim data presensi PTK **
+**Mengirim data presensi PTK**
 
 ```php
 use Smartklas\SmartklasApi;
@@ -30,7 +30,7 @@ $client->modul('presensi', 'ptk')->store([
 ```
 
 
-** Mengirim data presensi Siswa **
+**Mengirim data presensi Siswa**
 
 ```php
 use Smartklas\SmartklasApi;
